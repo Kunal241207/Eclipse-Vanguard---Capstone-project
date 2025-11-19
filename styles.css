@@ -298,6 +298,7 @@ h3{
 }
 p{
     opacity: 0.85;
+    
 }
 .feature-card-o:hover {
     background-color: rgba(26, 27, 40, 0.722);
@@ -448,7 +449,7 @@ p{
     text-align: center;
 }
 .hero-section{
-    margin: 80px 0 20px;
+    margin-top: 100px;
     padding: 50px 0px 50px;
     color: white;
     font-family: Rajdhani;
@@ -476,11 +477,11 @@ p{
 
 .champion-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
     gap: 40px;
     padding: 70px;
     justify-items: center;
-    background: linear-gradient(180deg,rgba(77, 85, 99, 0.597) 5%,rgba(4, 4, 47, 0.589) 30%, rgba(12, 12, 126, 0.679) 100%);
+    background: linear-gradient(180deg,rgb(107, 107, 104) 0%,rgba(77, 85, 99, 0.695) 5%,rgba(4, 4, 47, 0.7) 30%, rgba(27, 12, 126, 0.755) 100%);
 }
 
 .champ-card{
@@ -490,9 +491,10 @@ p{
     transition: transform 0.4s ;
 }
 .champ-card img{
-    width: 300px;
+    width: 310px;
     height: 400px;
     object-fit: cover;
+    display: block;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
 }
@@ -509,7 +511,7 @@ p{
 
 .champ-card:hover{
     box-shadow: 0 0 15px 5px rgba(250, 230, 182, 0.519);
-    transform: scale(1.02); 
+    transform: rotate(-3deg) scale(1.071) ; 
 }
 .tag{
     float: right;
@@ -548,11 +550,11 @@ p{
 .follow-us{
     margin-top: 50px;
     width: 100%;
-
+    box-shadow: 0 0 30px violet;
     font-size: 23px;
     text-align: center;
-    background: linear-gradient(180deg,rgba(238, 130, 238, 0.57) 1%,rgb(19, 5, 58) 3%, rgba(24, 0, 46, 0.922) 30%,rgb(7, 7, 24) 70%);
-    padding: 60px 0 ;
+    background: linear-gradient(180deg,rgba(238, 130, 238, 0.57) 1%,rgb(15, 3, 46) 4%, rgba(24, 0, 46, 0.922) 30%,rgb(7, 7, 24) 70%);
+    padding: 70px 36px ;
     color: white;
     font-family: rajdhani;
 }
@@ -566,7 +568,7 @@ p{
 }
 .media-icons{
     border: 2px solid whitesmoke;
-    background-color: rgba(240, 230, 140, 0.148);
+    background-color: rgba(161, 154, 93, 0.148);
     border-radius: 12px;
     padding: 40px;
     margin:30px;
@@ -598,8 +600,73 @@ p{
     color: violet;
 }
 
-.touch{
-    text-align: left;
-    width: 100%;
-    padding: 60px;
+.med-section{
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+   background: #ea474fb9; 
+   padding: 80px 60px;
+   position: relative;
+   box-shadow:0 12px 70px #e8424bdb;
 }
+.media-panel{
+    color: white;
+    padding-right: 40px;
+}
+
+.media-title {
+  font-size: 80px;
+  font-weight: 900;
+  margin: 60px 0 30px;
+  font-family: rajdhani;
+}
+
+.media-panel p{
+    font-size: 18px;
+    line-height: 2.3;
+    margin-bottom: 20px;
+}
+
+.med-img{
+    margin-top: 47px;
+}
+.med-img img{
+    width:100%;
+    border-radius: 7px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap:40px;
+    padding: 70px 60px;
+    margin: 30px auto;
+    justify-items: center;
+    color: whitesmoke;
+    font-family: rajdhani;
+}
+.wallpaper-gallery{
+    overflow: hidden;
+}
+.wallpaper-gallery img{
+    display: block;
+    height: 222px;
+    width: 360px;
+    transition: transform 0.5s;
+    border:0.5px solid white
+}
+.date{
+    color: burlywood;
+    margin: 20px 0;
+}
+.download-icon{
+    margin-top: 20px;
+    float: right;
+    color: rgba(230, 220, 207, 0.525);
+}
+.download-icon:hover{
+    color: rgba(213, 213, 97, 0.862);
+}
+.wallpaper-gallery:hover .image{
+    transform: scale(1.06);
+}
+
