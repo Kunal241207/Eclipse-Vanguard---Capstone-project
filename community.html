@@ -8,6 +8,114 @@
     rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+    <style>
+      #gridContainer{
+        display: grid;
+        width: 85vw;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin:auto;
+      }
+
+      .child1{
+        margin-top: 54px;
+
+        text-align: left;
+      }
+      .child1 h1{
+        font-size: 60px;
+        margin-bottom: 40px;
+      }
+      .child1 p{
+        padding-top: 10px;
+        font-size: 19px;
+      }
+      
+      .forum{
+        border: 0.6px solid rgba(255, 68, 0, 0.625);
+        border-radius: 12px;
+        padding: 23px;
+        margin-bottom: 28px;
+        width: 75%;
+        background-color: rgba(82, 91, 91, 0.204);
+      }
+      .update{
+        border: 0.6px solid rgb(59, 14, 184);
+        border-radius: 12px;
+        padding: 23px;
+        margin-bottom: 28px;
+        width: 75%;
+        background-color: rgba(82, 91, 91, 0.204);
+      }
+      .resource{
+        border: 0.6px solid rgba(218, 165, 32, 0.65);
+        border-radius: 12px;
+        padding: 23px;
+        width: 75%;
+        background-color: rgba(82, 91, 91, 0.204);
+      }
+      .touchIcon{
+        font-size: 32px;
+        margin-top: 11px;
+        float: right;
+      }
+      #for{
+        color: rgba(233, 190, 82, 0.789);
+
+      }
+      #upd{
+        color: rgba(137, 43, 226, 0.749);
+      }
+      #res{
+        color: rgba(216, 216, 110, 0.722);
+      }
+      .forum:hover{
+        border: 1px solid rgba(194, 73, 28, 0.927);
+      }
+      .update:hover{
+        border: 1px solid rgb(75, 24, 193);
+      }
+      .resource:hover{
+        border: 1px solid rgba(174, 133, 29, 0.788);
+      }
+
+      .child2{
+        margin-top: 54px;
+        text-align: left;
+      }
+      .formBox{
+        background-color: rgba(25, 24, 49, 0.428);
+        border: 0.5px solid rgba(176, 184, 184, 0.573);
+        padding: 38px;
+        border-radius: 13px;
+      }
+      .formBox label{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 2.6;
+
+      }
+      .formBox input{
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: rgba(6, 1, 29, 0.778);
+      }
+      .formBox textarea{
+        width: 100%;
+        border-radius: 10px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(6, 1, 29, 0.778);
+      }
+      .formBox button{
+        width: 100%;
+        height: 36px;
+        border-radius: 15px;
+        background: linear-gradient(90deg,lightsalmon 10%,orange 50%,salmon 100%);
+      }
+    </style>
 </head>
 <body>
     <nav>
@@ -16,7 +124,7 @@
     </div>
     <div class="mid">
       <ul>
-        <li><a href="#" class="sec">About</a></li>
+        <li><a href="#" class="sec">About ▾</a></li>
         <li><a href="index.html" class="sec">Home</a></li>
         <li><a href="heroes.html" class="sec">Heroes</a></li>
         <li><a href="media.html" class="sec">Media</a></li>
@@ -56,6 +164,42 @@
         </div>
       </div>
 
+      <div id="gridContainer">
+    <div class="child1">
+      <h1>GET IN TOUCH</h1>
+      <div class="forum">
+        <div class="touchIcon" id="for"><i class="fa-solid fa-envelope"></i></div>
+        <h4>FORUM</h4>
+        <p>Say out your ideas or inquiries</p>
+      </div>
+      <div class="update">
+        <div class="touchIcon" id="upd"><i class="fa-solid fa-message"></i></div>
+        <h4>PATCH NOTES AND UPDATES</h4>
+        <p>Get to know to about latest updates</p>
+      </div>
+      <div class="resource">
+        <div class="touchIcon" id="res"><i class="fa-solid fa-user-group"></i></div>
+        <h4>COMMUNITY RESOURCES</h4>
+        <p>Join our community for help</p>
+      </div>
+    </div>
+    <div class="child2">
+      <div class="formBox">
+      <form class="form">
+        <label>NAME</label><br>
+        <input type="text" placeholder="Enter your name" required>
+        <br><br>
+        <label>EMAIL</label><br>
+        <input type="email" placeholder="name@example.com" required>
+        <br><br>
+        <label>MESSAGE</label><br>
+        <textarea placeholder="Apni mansik stithi bataiye..." required></textarea>
+        <br><br>
+        <button>Send Message</button>
+      </form>
+      </div>
+    </div>
+  </div>
     </div>
     
 </body>
