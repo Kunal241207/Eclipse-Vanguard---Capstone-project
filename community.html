@@ -39,6 +39,7 @@
         margin-bottom: 28px;
         width: 75%;
         background-color: rgba(82, 91, 91, 0.204);
+        transition: border 0.33s ease-in;
       }
       .update{
         border: 0.6px solid rgb(59, 14, 184);
@@ -47,6 +48,7 @@
         margin-bottom: 28px;
         width: 75%;
         background-color: rgba(82, 91, 91, 0.204);
+        transition: border 0.33s ease-in;
       }
       .resource{
         border: 0.6px solid rgba(218, 165, 32, 0.65);
@@ -54,6 +56,7 @@
         padding: 23px;
         width: 75%;
         background-color: rgba(82, 91, 91, 0.204);
+        transition: border 0.33s ease-in;
       }
       .touchIcon{
         font-size: 32px;
@@ -61,7 +64,7 @@
         float: right;
       }
       #for{
-        color: rgba(233, 190, 82, 0.789);
+        color: rgba(236, 164, 75, 0.789);
 
       }
       #upd{
@@ -71,13 +74,13 @@
         color: rgba(216, 216, 110, 0.722);
       }
       .forum:hover{
-        border: 1px solid rgba(194, 73, 28, 0.927);
+        border: 0.8px solid rgb(240, 102, 52);
       }
       .update:hover{
-        border: 1px solid rgb(75, 24, 193);
+        border: 0.8px solid rgb(124, 74, 241);
       }
       .resource:hover{
-        border: 1px solid rgba(174, 133, 29, 0.788);
+        border: 0.8px solid rgb(222, 170, 40);
       }
 
       .child2{
@@ -101,6 +104,7 @@
         border-radius: 10px;
         width: 100%;
         background-color: rgba(6, 1, 29, 0.778);
+        color: lightgoldenrodyellow;
       }
       .formBox textarea{
         width: 100%;
@@ -108,12 +112,19 @@
         height: 100px;
         padding: 10px;
         background-color: rgba(6, 1, 29, 0.778);
+        color: lightgoldenrodyellow;
+        font-family:sans-serif;
       }
       .formBox button{
         width: 100%;
         height: 36px;
+        border: none;
         border-radius: 15px;
         background: linear-gradient(90deg,lightsalmon 10%,orange 50%,salmon 100%);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      .formBox button:hover{
+        box-shadow: 0 0 9px lightcoral;
       }
     </style>
 </head>
